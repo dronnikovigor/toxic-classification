@@ -13,10 +13,10 @@ def read_requirements(path_dir):
 
 
 setup(
-    name='toxic',
-    version='0.1.0',
+    name='toxic-classification',
+    version='1.0.0',
     packages=find_packages(exclude=['tests', 'tests.*']),
-    author='Timur Ganiev',
-    author_email='ganiev.tmr@gmail.com',
+    author='Igor Dronnikov',
+    author_email='dronnikovigor@gmail.com',
     description='Toxic comment classification and interpretation'
 )
