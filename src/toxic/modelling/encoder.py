@@ -3,7 +3,7 @@ from typing import Sequence, Tuple
 import torch
 from torch import nn
 
-from src.toxic.modelling.modules import Conv1dMaxPooling
+from .modules import Conv1dMaxPooling
 
 
 class WideCNNEncoder(nn.Module):

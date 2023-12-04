@@ -15,8 +15,16 @@ def read_requirements(path_dir):
 setup(
     name='toxic-classification',
     version='1.0.0',
-    packages=find_packages(exclude=['tests', 'tests.*']),
     author='Igor Dronnikov',
     author_email='dronnikovigor@gmail.com',
-    description='Toxic comment classification and interpretation'
+    description='Toxic comment classification and interpretation',
+    install_requires=read_requirements(THIS_DIR),
+    long_description=(THIS_DIR / 'README.md').read_text(),
+    long_description_content_type='text/markdown',
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.11',
+    ],
 )

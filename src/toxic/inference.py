@@ -3,10 +3,10 @@ from typing import List, Union
 
 import torch
 
-from src.toxic.caching import load_pretrained
-from src.toxic.data.tokenizer import SentencePieceBPETokenizer
-from src.toxic.interpretation import lig_explain
-from src.toxic.modelling.model import Model
+from .caching import load_pretrained
+from .data.tokenizer import SentencePieceBPETokenizer
+from .interpretation import lig_explain
+from .modelling.model import Model
 
 
 class Toxic:

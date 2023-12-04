@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import DataLoader
 from torch.utils.data.dataset import Dataset as TorchDataset
 
-from src.toxic.data.tokenizer import SentencePieceBPETokenizer
+from .tokenizer import SentencePieceBPETokenizer
 
 
 def collate(tokenizer: SentencePieceBPETokenizer) -> Callable:

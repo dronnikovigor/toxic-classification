@@ -3,8 +3,8 @@ from dataclasses import dataclass
 from omegaconf import DictConfig
 from torch import nn
 
-from src.toxic.modelling.encoder import WideCNNEncoder
-from src.toxic.modelling.classifier import SentenceClassifier
+from .encoder import WideCNNEncoder
+from .classifier import SentenceClassifier
 
 
 @dataclass

@@ -4,16 +4,16 @@ from typing import Sequence
 
 from omegaconf import DictConfig
 
-from src.toxic.data.augmentations.transforms import (
+from .augmentations.transforms import (
     RemoveWhitespaceTransform,
     SwapWordsTransform,
     AppendRandomLettersTransform,
     CutOutLettersTransform
 )
-from src.toxic.data.augmentations.composition import Compose, OneOf
-from src.toxic.data.dataset import Dataset
-from src.toxic.data.tokenizer import SentencePieceBPETokenizer
-from src.toxic.data.utils import read_fasttext_data
+from .augmentations.composition import Compose, OneOf
+from .dataset import Dataset
+from .tokenizer import SentencePieceBPETokenizer
+from .utils import read_fasttext_data
 
 
 def train_val_split(data: Sequence, val_size: float = 0.2, random_state=0xDEAD):
