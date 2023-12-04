@@ -9,7 +9,7 @@ from zipfile import ZipFile
 
 
 PRETRAINED_MODEL_MAP = {
-    'cnn': 'https://github.com/esceptico/toxic/releases/download/v0.1.3/model.pth.zip'
+    'cnn': 'https://github.com/dronnikovigor/toxic-classification/releases/download/v1.0.0/model.pth.zip'
 }
 CACHE_DIR = Path.home() / '.toxic_models'
 MODEL_FILE_NAME = 'model.pth'
